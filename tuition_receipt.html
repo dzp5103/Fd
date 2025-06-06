@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0, minimum-scale=0.25">
+    <title>HACC Tuition Receipt - Summer 2025</title>
+    <style>
+        @media print {
+            body {
+                margin: 0;
+                padding: 20px;
+            }
+            .header {
+                page-break-after: avoid;
+            }
+            .receipt-box {
+                page-break-inside: avoid;
+                border: 2px solid #003366 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .student-info, .payment-info {
+                page-break-inside: avoid;
+            }
+            table {
+                page-break-inside: auto;
+            }
+            tr {
+                page-break-inside: avoid;
+            }
+            .total-row {
+                background: #e6e6e6 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .payment-status {
+                background: #4CAF50 !important;
+                color: white !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .footer {
+                position: running(footer);
+            }
+            @page {
+                margin: 0.5in;
+                @bottom-center {
+                    content: element(footer);
+                }
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            box-sizing: border-box;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 20px;
+        }
+        .receipt-box {
+            border: 2px solid #003366;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .receipt-number {
+            font-size: 1.2em;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        .student-info, .payment-info {
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #f2f2f2;
+        }
+        .total-row {
+            font-weight: bold;
+            background: #003366;
+            color: white;
+            font-size: 1.1em;
+        }
+        .total-row td {
+            padding: 12px 10px;
+        }
+        .payment-status {
+            display: inline-block;
+            padding: 5px 15px;
+            background: #4CAF50;
+            color: white;
+            border-radius: 3px;
+            margin: 10px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        .barcode {
+            text-align: center;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="hacc.edu_templates_assets_images_Logo.svg" alt="HACC Logo" style="max-width: 300px;">
+        <h1 style="color: #003366; font-size: 2.5em; margin-bottom: 10px;">Harrisburg Area Community College</h1>
+        <h2 style="color: #666;">Central Pennsylvania's Community College</h2>
+        <h3>Official Tuition Receipt - Summer 2025</h3>
+    </div>
+
+    <div class="receipt-box">
+        <div class="receipt-number">
+            Receipt #: 133295-SUM25
+        </div>
+
+            <div class="student-info">
+            <h3>Student Information</h3>
+            <p><strong>Legal Name:</strong> Daniel James Palming</p>
+            <p><strong>Student ID:</strong> H01971821</p>
+            <p><strong>Student Account:</strong> 781971821</p>
+            <p><strong>Program:</strong> Computer Info Security - AS</p>
+            <p><strong>Campus:</strong> HACC's Harrisburg Campus - One HACC Drive, Harrisburg, PA 17110</p>
+            <p><strong>Term:</strong> Summer 2025 (May 12, 2025 - August 15, 2025)</p>
+            <p><strong>Bill Date:</strong> June 4, 2025</p>
+            <p><strong>Due Date:</strong> June 15, 2025</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Credits</th>
+                    <th>Rate</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CIS140 - Information Technology Support</td>
+                    <td>3.0</td>
+                    <td>$176.00</td>
+                    <td>$528.00</td>
+                </tr>
+                <tr>
+                    <td>CNT120 - Network Communications Technology</td>
+                    <td>3.0</td>
+                    <td>$176.00</td>
+                    <td>$528.00</td>
+                </tr>
+                <tr>
+                    <td>MATH103 - College Algebra</td>
+                    <td>3.0</td>
+                    <td>$176.00</td>
+                    <td>$528.00</td>
+                </tr>
+                <tr>
+                    <td>ENGL101 - English Composition I</td>
+                    <td>3.0</td>
+                    <td>$176.00</td>
+                    <td>$528.00</td>
+                </tr>
+                <tr>
+                    <td>Technology Fee (Full-time)</td>
+                    <td colspan="2">12+ credits</td>
+                    <td>$75.00</td>
+                </tr>
+                <tr>
+                    <td>Student Activity Fee</td>
+                    <td colspan="2">$3.75/credit</td>
+                    <td>$45.00</td>
+                </tr>
+                <tr>
+                    <td>Campus Fee</td>
+                    <td colspan="2">$4.67/credit</td>
+                    <td>$56.00</td>
+                </tr>
+                <tr>
+                    <td>Registration Fee</td>
+                    <td colspan="2">Per Term</td>
+                    <td>$25.00</td>
+                </tr>
+                <tr>
+                    <td>Capital Outlay Fee</td>
+                    <td colspan="2">$5.00/credit</td>
+                    <td>$60.00</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="3"><strong>Total Amount</strong></td>
+                    <td><strong>$2,288.00</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="payment-info">
+            <h3>Payment Information</h3>
+            <p><strong>Payment Plan:</strong> Summer 2025 - Full Payment</p>
+            <p><strong>Payment Date:</strong> June 4, 2025 at 2:15 PM EDT</p>
+            <p><strong>Payment Method:</strong> VISA **** **** **** 9777</p>
+            <p><strong>Transaction ID:</strong> TXN-20250604-133295</p>
+            <p><strong>Authorization Code:</strong> 825749</p>
+            <p><strong>Confirmation #:</strong> HACC-PMT-133295-SUM25</p>
+            <div class="payment-status">PAID IN FULL</div>
+        </div>
+
+        <div class="barcode">
+            *HACC-PMT-133295-SUM25*
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Harrisburg Area Community College - Harrisburg Campus</p>
+        <p>One HACC Drive, Harrisburg, PA 17110</p>
+        <p>Questions? Contact Student Accounts: (717) 780-2378 or studentaccounts@hacc.edu</p>
+        <p>Generated: June 6, 2025 03:30 AM EDT</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0, minimum-scale=0.25">
+    <title>HACC Class Schedule - Summer 2025</title>
+    <style>
+        @media print {
+            body {
+                margin: 0;
+                padding: 20px;
+            }
+            .header {
+                page-break-after: avoid;
+            }
+            .student-info {
+                page-break-inside: avoid;
+            }
+            .schedule {
+                page-break-inside: avoid;
+            }
+            .course-list {
+                page-break-before: always;
+            }
+            .course-item {
+                page-break-inside: avoid;
+            }
+            .class-block {
+                background-color: #e3f2fd !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .footer {
+                position: running(footer);
+            }
+            @page {
+                margin: 0.5in;
+                @bottom-center {
+                    content: element(footer);
+                }
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            box-sizing: border-box;
+            line-height: 1.6;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 20px;
+        }
+        .student-info {
+            background: #f8f8f8;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .student-info p {
+            margin: 8px 0;
+            padding: 4px 0;
+            border-bottom: 1px dotted #e0e0e0;
+        }
+        .schedule {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .schedule th, .schedule td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .schedule th {
+            background: #003366;
+            color: white;
+        }
+        .time-slot {
+            background: #f2f2f2;
+            font-weight: bold;
+        }
+        .class-block {
+            background: #e3f2fd;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 2px;
+        }
+        .course-list {
+            margin: 20px 0;
+        }
+        .course-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="hacc.edu_templates_assets_images_Logo.svg" alt="HACC Logo" style="max-width: 300px;">
+        <h1 style="color: #003366; font-size: 2.5em; margin-bottom: 10px;">Harrisburg Area Community College</h1>
+        <h2 style="color: #666;">Central Pennsylvania's Community College</h2>
+        <h3>Official Class Schedule - Summer 2025</h3>
+    </div>
+
+    <div class="student-info">
+        <p><strong>Legal Name:</strong> Daniel James Palming</p>
+        <p><strong>Student ID:</strong> H01971821</p>
+        <p><strong>Program:</strong> Computer Info Security - AS</p>
+        <p><strong>Campus:</strong> HACC's Harrisburg Campus - One HACC Drive, Harrisburg, PA 17110</p>
+        <p><strong>Term:</strong> Summer 2025 (May 12, 2025 - August 15, 2025)</p>
+    </div>
+
+    <table class="schedule">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time-slot">9:00 AM - 10:15 AM</td>
+                <td class="class-block">CIS140<br>Harrisburg Tech 205</td>
+                <td></td>
+                <td class="class-block">CIS140<br>Harrisburg Tech 205</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">10:30 AM - 11:45 AM</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">11:00 AM - 12:15 PM</td>
+                <td></td>
+                <td class="class-block">CNT120<br>Harrisburg Tech 112</td>
+                <td></td>
+                <td class="class-block">CNT120<br>Harrisburg Tech 112</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">1:00 PM - 2:15 PM</td>
+                <td class="class-block">MATH103<br>Main 305</td>
+                <td></td>
+                <td class="class-block">MATH103<br>Main 305</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="course-list">
+        <h3>Course Details</h3>
+        <div class="course-item">
+            <p><strong>CIS140 - Information Technology Support</strong></p>
+            <p>CRN: 10254 | Credits: 3.0 | Section: H01</p>
+            <p>Schedule: Mon/Wed 9:00 AM - 10:15 AM</p>
+            <p>Location: Harrisburg Tech 205</p>
+            <p>Instructor: Dr. James Wilson</p>
+            <p>Prerequisites: None</p>
+            <p>Required Materials:</p>
+            <ul>
+                <li>CompTIA A+ Guide to IT Technical Support, 10th Edition (ISBN: 0323764665)</li>
+                <li>Access to course Canvas site</li>
+            </ul>
+        </div>
+        <div class="course-item">
+            <p><strong>CNT120 - Network Communications Technology</strong></p>
+            <p>CRN: 10267 | Credits: 3.0 | Section: H02</p>
+            <p>Schedule: Tue/Thu 11:00 AM - 12:15 PM</p>
+            <p>Location: Harrisburg Tech 112</p>
+            <p>Instructor: Prof. Sarah Martinez</p>
+            <p>Prerequisites: CIS105 or department approval</p>
+            <p>Required Materials:</p>
+            <ul>
+                <li>Network+ Guide to Networks, 8th Edition</li>
+                <li>Packet Tracer software (free download)</li>
+            </ul>
+        </div>
+        <div class="course-item">
+            <p><strong>MATH103 - College Algebra</strong></p>
+            <p>CRN: 10312 | Credits: 3.0 | Section: H03</p>
+            <p>Schedule: Mon/Wed 1:00 PM - 2:15 PM</p>
+            <p>Location: Main 305</p>
+            <p>Instructor: Dr. Robert Chen</p>
+            <p>Prerequisites: MATH033 with grade C or higher, or placement test</p>
+            <p>Required Materials:</p>
+            <ul>
+                <li>College Algebra, 7th Edition</li>
+                <li>Scientific calculator (TI-84 Plus recommended)</li>
+                <li>MyMathLab access code</li>
+            </ul>
+        </div>
+        <div class="course-item">
+            <p><strong>ENGL101 - English Composition I</strong></p>
+            <p>CRN: 10189 | Credits: 3.0 | Section: W01</p>
+            <p>Schedule: Online/Asynchronous</p>
+            <p>Location: Virtual (Canvas)</p>
+            <p>Instructor: Prof. Emily Thompson</p>
+            <p>Prerequisites: ENGL051 or ESL051 with grade C or higher, or placement test</p>
+            <p>Required Materials:</p>
+            <ul>
+                <li>The Norton Field Guide to Writing with Readings, 5th Edition</li>
+                <li>Access to Canvas writing tools</li>
+                <li>Microsoft Word or compatible word processor</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Total Credits: 12.0 | Full-time Status</p>
+        <p>Generated on: June 6, 2025 at 03:21 AM EDT</p>
+        <p>Student ID: H01971821 | Schedule ID: HACC-SCH-H01971821-SUM25</p>
+        <p>Questions? Contact the Registration Office: 717-780-2373 or registration@hacc.edu</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0, minimum-scale=0.25">
+    <title>HACC Student Enrollment Record</title>
+    <style>
+        @media print, screen {
+            body {
+                margin: 0;
+                padding: 20px;
+            }
+            .header {
+                page-break-after: avoid;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+            table {
+                page-break-inside: auto;
+            }
+            tr {
+                page-break-inside: avoid;
+                page-break-after: auto;
+            }
+            .footer {
+                position: running(footer);
+                page-break-before: avoid;
+            }
+            @page {
+                margin: 0.5in;
+                @bottom-center {
+                    content: element(footer);
+                }
+            }
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 30px;
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+            box-sizing: border-box;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #003366;
+            padding: 20px;
+            margin-bottom: 30px;
+            background: linear-gradient(to bottom, #fff, #f8f9fa);
+        }
+        .header h1 {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .official-notice {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #003366;
+            color: white;
+            font-size: 1.1em;
+            padding: 12px 8px;
+        }
+        td {
+            padding: 10px 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .student-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="hacc.edu_templates_assets_images_Logo.svg" alt="HACC Logo" style="max-width: 300px;">
+        <h1 style="color: #003366; font-size: 2.5em; margin-bottom: 10px;">Harrisburg Area Community College</h1>
+        <h2 style="color: #666;">Central Pennsylvania's Community College</h2>
+        <h3>Official Student Enrollment Record</h3>
+    </div>
+
+    <div class="official-notice">
+        OFFICIAL ENROLLMENT RECORD
+        <br>Term: Summer 2025 (May 12, 2025 - August 15, 2025)
+        <br>Document Generated: June 6, 2025
+    </div>
+
+    <div class="section">
+        <h3>Student Information</h3>
+        <div class="student-info">
+            <p><strong>Student ID:</strong> H01971821</p>
+            <p><strong>Legal Name:</strong> Daniel James Palming</p>
+            <p><strong>Campus:</strong> HACC's Harrisburg Campus - One HACC Drive, Harrisburg, PA 17110</p>
+            <p><strong>Program:</strong> Computer Info Security - AS</p>
+            <p><strong>Catalog Term:</strong> Summer 2023</p>
+            <p><strong>Email:</strong> dxp51037@hawkmail.hacc.edu</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Enrolled Courses - Summer 2025</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Title</th>
+                    <th>Credits</th>
+                    <th>Schedule</th>
+                    <th>Room</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CIS140</td>
+                    <td>Information Technology Support</td>
+                    <td>3.0</td>
+                    <td>Mon/Wed 9:00 AM - 10:15 AM</td>
+                    <td>Harrisburg Tech 205</td>
+                </tr>
+                <tr>
+                    <td>CNT120</td>
+                    <td>Network Communications Technology</td>
+                    <td>3.0</td>
+                    <td>Tue/Thu 11:00 AM - 12:15 PM</td>
+                    <td>Harrisburg Tech 112</td>
+                </tr>
+                <tr>
+                    <td>MATH103</td>
+                    <td>College Algebra</td>
+                    <td>3.0</td>
+                    <td>Mon/Wed 1:00 PM - 2:15 PM</td>
+                    <td>Main 305</td>
+                </tr>
+                <tr>
+                    <td>ENGL101</td>
+                    <td>English Composition I</td>
+                    <td>3.0</td>
+                    <td>Online/Asynchronous</td>
+                    <td>Virtual</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>Academic Summary</h3>
+        <table>
+            <tr>
+                <td><strong>Total Credits Enrolled:</strong></td>
+                <td>12.0</td>
+            </tr>
+            <tr>
+                <td><strong>Program GPA Requirement:</strong></td>
+                <td>2.00 minimum</td>
+            </tr>
+            <tr>
+                <td><strong>Enrollment Status:</strong></td>
+                <td>Full-time</td>
+            </tr>
+            <tr>
+                <td><strong>Expected Graduation Date:</strong></td>
+                <td>May 2026</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>Program Requirements Progress - Computer Info Security AS</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Requirement Area</th>
+                    <th>Required Courses</th>
+                    <th>Credits</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="11">Core Program Requirements<br>(45 credits)</td>
+                    <td>CIS105 - Introduction to Software</td>
+                    <td>3.0</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td>CIS140 - Information Technology Support</td>
+                    <td>3.0</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>CIS222 - Database Systems</td>
+                    <td>3.0</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td>CIS224 - System Analysis & Design</td>
+                    <td>3.0</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td>CIS241 - Database Administration</td>
+                    <td>3.0</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td>CIS264 - Network Security</td>
+                    <td>3.0</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td>CISE200 - Information Security Fundamentals</td>
+                    <td>3.0</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td>CNT120 - Network Communications Technology</td>
+                    <td>3.0</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>CNT125 - Network Defense Technologies</td>
+                    <td>3.0</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td>CPS121 - Computer Science I</td>
+                    <td>3.0</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td>MATH202 - Introduction to Statistics</td>
+                    <td>3.0</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Written Communication (6 credits)</td>
+                    <td>ENGL101, ENGL102</td>
+                    <td>In Progress (3cr)</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Oral Communication (3 credits)</td>
+                    <td>SPCH101/COMM101</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Mathematics (3 credits)</td>
+                    <td>MATH103/116/119/121</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Core A - Global Awareness (3 credits)</td>
+                    <td>Core A Elective</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Core B (3 credits)</td>
+                    <td>B100 Elective</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Core C Science with Lab (3 credits)</td>
+                    <td>Lab Science</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td colspan="2">PE and Wellness (1 credit)</td>
+                    <td>Wellness Course</td>
+                    <td>Not Started</td>
+                </tr>
+                <tr>
+                    <td colspan="2">First Year Seminar (1 credit)</td>
+                    <td>FYS/FS Course</td>
+                    <td>Not Started</td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="margin-top: 20px;">
+            <p><strong>Total Program Credits Required:</strong> 65.000</p>
+            <p><strong>Required Institutional Credits:</strong> 15.000</p>
+            <p><strong>Maximum Transfer Credits:</strong> 45.000</p>
+            <p><strong>Required Program GPA:</strong> 2.00</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Document Generated: June 6, 2025 03:12 AM EDT</p>
+        <p>Document ID: HACC-ENR-H01971821-SUM25</p>
+        <p>This is an official enrollment record of Harrisburg Area Community College</p>
+        <p>Questions? Contact Registration Office at 717-780-2509 or email registration@hacc.edu</p>
+    </div>
+</body>
+</html>
