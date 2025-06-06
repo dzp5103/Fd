@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0, minimum-scale=0.25">
+    <title>HACC Enrollment Verification Letter</title>
+    <style>
+        @media print {
+            body {
+                margin: 0;
+                padding: 20px;
+                background: white;
+            }
+            .letterhead {
+                page-break-after: avoid;
+            }
+            .content {
+                page-break-inside: avoid;
+            }
+            ul {
+                page-break-inside: avoid;
+            }
+            .signature {
+                page-break-inside: avoid;
+                page-break-before: avoid;
+            }
+            .official-seal {
+                opacity: 0.15 !important;
+                z-index: -1;
+            }
+            .footer {
+                position: running(footer);
+            }
+            @page {
+                margin: 0.75in;
+                @bottom-center {
+                    content: element(footer);
+                }
+            }
+        }
+        body {
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            box-sizing: border-box;
+            font-size: 12pt;
+            line-height: 1.6;
+            background: #fff;
+        }
+        .letterhead {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 25px;
+            background: linear-gradient(to bottom, #fff, #f8f9fa);
+            border-bottom: 3px solid #003366;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .letterhead img {
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        .date {
+            text-align: right;
+            margin: 20px 0;
+        }
+        .address {
+            margin-bottom: 30px;
+        }
+        .content {
+            margin: 30px 0;
+        }
+        .signature {
+            margin-top: 50px;
+        }
+        .signature img {
+            max-width: 200px;
+        }
+        .contact-footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .official-seal {
+            position: absolute;
+            bottom: 120px;
+            right: 50px;
+            opacity: 0.15;
+            width: 180px;
+            height: 180px;
+            background: #003366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            transform: rotate(-15deg);
+            border: 3px double #fff;
+            box-shadow: 0 0 0 2px #003366;
+        }
+        .content ul {
+            background: #f8f9fa;
+            padding: 15px 40px;
+            border-left: 4px solid #003366;
+            margin: 20px 0;
+        }
+        .content ul li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="letterhead">
+        <img src="hacc.edu_templates_assets_images_Logo.svg" alt="HACC Logo">
+            <h1 style="color: #003366; font-size: 2.5em; margin-bottom: 10px;">Harrisburg Area Community College</h1>
+            <h2 style="color: #666;">Central Pennsylvania's Community College</h2>
+            <h3>Office of the Registrar</h3>
+        <p>One HACC Drive, Harrisburg, PA 17110</p>
+        <p>Phone: (717) 780-2373 | Fax: (717) 780-2371</p>
+    </div>
+
+    <div class="date">
+        June 6, 2025
+    </div>
+
+    <div class="address">
+        TO WHOM IT MAY CONCERN:
+    </div>
+
+    <div class="content">
+        <p>This letter is to verify that Daniel James Palming (Student ID: H01971821) is currently enrolled as a full-time student at Harrisburg Area Community College - Central Pennsylvania's Community College for the Summer 2025 semester (May 12, 2025 - August 15, 2025).</p>
+
+            <p>The student is enrolled in the Associate of Science in Computer Information Security program at HACC's Harrisburg Campus (One HACC Drive, Harrisburg, PA 17110). Current enrollment details are as follows:</p>
+
+        <ul>
+            <li>Academic Term: Summer 2025</li>
+            <li>Enrollment Status: Full-time</li>
+            <li>Credit Hours: 12.0</li>
+            <li>Expected Graduation: May 2026</li>
+            <li>Program: Computer Info Security - AS</li>
+        </ul>
+
+        <p>Current course enrollment includes:</p>
+        <ul>
+            <li>CIS140 - Information Technology Support (3.0 credits)</li>
+            <li>CNT120 - Network Communications Technology (3.0 credits)</li>
+            <li>MATH103 - College Algebra (3.0 credits)</li>
+            <li>ENGL101 - English Composition I (3.0 credits)</li>
+        </ul>
+
+        <p>This student is in good academic standing and is making satisfactory progress toward degree completion.</p>
+    </div>
+
+    <div class="signature">
+        <p>Sincerely,</p>
+        <p style="margin-top: 40px;">
+            <strong>Jennifer L. Ayers</strong><br>
+            Registrar<br>
+            Harrisburg Area Community College<br>
+            registrar@hacc.edu
+        </p>
+    </div>
+
+    <div class="official-seal">
+        <div>
+            HARRISBURG AREA<br>
+            COMMUNITY COLLEGE<br>
+            *OFFICIAL DOCUMENT*<br>
+            EST. 1964
+        </div>
+    </div>
+
+    <div class="contact-footer">
+        <p>One HACC Drive, Harrisburg, PA 17110 | www.hacc.edu</p>
+        <p>Document ID: HACC-VER-H01971821-SUM25 | Generated: 06/06/2025 03:20 AM EDT</p>
+    </div>
+</body>
+</html>

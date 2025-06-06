@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0, minimum-scale=0.25">
+    <title>HACC Unofficial Transcript</title>
+    <style>
+        @media print {
+            body {
+                margin: 0;
+                padding: 20px;
+            }
+            .header {
+                page-break-after: avoid;
+            }
+            .watermark {
+                position: fixed;
+                z-index: -1;
+                opacity: 0.15;
+            }
+            .student-info {
+                page-break-inside: avoid;
+            }
+            table {
+                page-break-inside: auto;
+            }
+            tr {
+                page-break-inside: avoid;
+                page-break-after: auto;
+            }
+            .term-header {
+                page-break-before: avoid;
+            }
+            .footer {
+                position: running(footer);
+                page-break-before: avoid;
+            }
+            @page {
+                margin: 0.5in;
+                @bottom-center {
+                    content: element(footer);
+                }
+            }
+        }
+        body {
+            font-family: 'Consolas', 'Courier New', monospace;
+            width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            box-sizing: border-box;
+            line-height: 1.6;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #003366;
+            padding: 25px;
+            background: linear-gradient(to bottom, #fff, #f8f9fa);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 100px;
+            font-weight: bold;
+            color: rgba(200, 200, 200, 0.15);
+            pointer-events: none;
+            z-index: -1;
+            white-space: nowrap;
+        }
+        .transcript-notice {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .student-info {
+            margin: 20px 0;
+            background: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background: #003366;
+            color: white;
+            font-size: 1.1em;
+            padding: 12px 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .term-header {
+            background: #003366;
+            color: white;
+            padding: 10px;
+            margin: 20px 0 10px 0;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="watermark">UNOFFICIAL</div>
+    
+    <div class="header">
+        <img src="hacc.edu_templates_assets_images_Logo.svg" alt="HACC Logo" style="max-width: 300px;">
+        <h1 style="color: #003366; font-size: 2.5em; margin-bottom: 10px;">Harrisburg Area Community College</h1>
+        <h2 style="color: #666;">Central Pennsylvania's Community College</h2>
+        <h3>Unofficial Academic Transcript</h3>
+    </div>
+
+    <div class="transcript-notice">
+        This is an UNOFFICIAL transcript for advisory purposes only.<br>
+        Official transcripts must be requested through the Registrar's Office.
+    </div>
+
+    <div class="student-info">
+        <p><strong>Legal Name:</strong> Daniel James Palming</p>
+        <p><strong>Student ID:</strong> H01971821</p>
+        <p><strong>Program:</strong> Computer Info Security - AS</p>
+        <p><strong>Campus:</strong> HACC's Harrisburg Campus - One HACC Drive, Harrisburg, PA 17110</p>
+        <p><strong>Catalog Year:</strong> 2023-2024</p>
+        <p><strong>Current Term:</strong> Summer 2025 (May 12, 2025 - August 15, 2025)</p>
+    </div>
+
+    <div class="academic-record">
+        <div class="term-header">Summer 2025 (In Progress)</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Title</th>
+                    <th>Credits</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CIS140</td>
+                    <td>Information Technology Support</td>
+                    <td>3.0</td>
+                    <td>IP</td>
+                </tr>
+                <tr>
+                    <td>CNT120</td>
+                    <td>Network Communications Technology</td>
+                    <td>3.0</td>
+                    <td>IP</td>
+                </tr>
+                <tr>
+                    <td>MATH103</td>
+                    <td>College Algebra</td>
+                    <td>3.0</td>
+                    <td>IP</td>
+                </tr>
+                <tr>
+                    <td>ENGL101</td>
+                    <td>English Composition I</td>
+                    <td>3.0</td>
+                    <td>IP</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><strong>Term Credits/GPA:</strong></td>
+                    <td>12.0</td>
+                    <td>IP</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="term-header">Program Requirements Summary</div>
+        <table>
+            <tr>
+                <td colspan="2"><strong>Total Program Requirements (65 credits)</strong></td>
+            </tr>
+            <tr>
+                <td>Core Program Requirements (45 credits):</td>
+                <td>In Progress - 6 credits</td>
+            </tr>
+            <tr>
+                <td>Written Communication (6 credits):</td>
+                <td>In Progress - 3 credits</td>
+            </tr>
+            <tr>
+                <td>Oral Communication (3 credits):</td>
+                <td>Not Started</td>
+            </tr>
+            <tr>
+                <td>Core A - Global Awareness (3 credits):</td>
+                <td>Not Started</td>
+            </tr>
+            <tr>
+                <td>Core B (3 credits):</td>
+                <td>Not Started</td>
+            </tr>
+            <tr>
+                <td>Core C Science with Lab (3 credits):</td>
+                <td>Not Started</td>
+            </tr>
+            <tr>
+                <td>Math Requirement (3 credits):</td>
+                <td>In Progress - 3 credits</td>
+            </tr>
+            <tr>
+                <td>PE and Wellness (1 credit):</td>
+                <td>Not Started</td>
+            </tr>
+            <tr>
+                <td>First Year Seminar (1 credit):</td>
+                <td>Not Started</td>
+            </tr>
+            <tr class="total-row">
+                <td><strong>Credits Completed:</strong></td>
+                <td>0.000</td>
+            </tr>
+            <tr>
+                <td><strong>Credits In Progress:</strong></td>
+                <td>12.000</td>
+            </tr>
+            <tr>
+                <td><strong>Credits Remaining:</strong></td>
+                <td>53.000</td>
+            </tr>
+            <tr>
+                <td><strong>Cumulative GPA:</strong></td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td><strong>Required Program GPA:</strong></td>
+                <td>2.00 minimum</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>Generated on: June 6, 2025 at 03:18 AM EDT</p>
+        <p>Student ID: H01971821 | Document ID: HACC-TRANS-H01971821-SUM25</p>
+        <p>This unofficial transcript is intended for advisory purposes only.<br>
+        For an official transcript, please contact the Registrar's Office at 717-780-2373 or visit hacc.edu/transcript</p>
+        <p>End of Transcript</p>
+    </div>
+</body>
+</html>

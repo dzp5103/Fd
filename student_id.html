@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACC Student ID Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+        }
+        .id-card {
+            width: 336px;
+            height: 192px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            background: #003366;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .logo {
+            height: 40px;
+            margin-bottom: 5px;
+        }
+        .photo-area {
+            width: 100px;
+            height: 120px;
+            background: #f0f0f0;
+            float: left;
+            margin: 10px;
+            border: 2px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #666;
+        }
+        .info {
+            float: right;
+            width: 200px;
+            padding: 10px;
+            font-size: 12px;
+        }
+        .id-number {
+            font-weight: bold;
+            color: #003366;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .expiration {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 10px;
+            color: #666;
+        }
+        .barcode {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 10px;
+        }
+        @media print {
+            body {
+                margin: 0;
+                background: white;
+            }
+            .id-card {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="id-card">
+        <div class="header">
+            <img src="hacc.edu_templates_assets_images_Logo.svg" alt="HACC Logo" class="logo">
+            <div style="font-size: 8px;">Central Pennsylvania's Community College</div>
+        </div>
+        <div class="photo-area">
+            [Student Photo]
+        </div>
+        <div class="info">
+            <div class="id-number">H01971821</div>
+            <div><strong>Name:</strong> Daniel J. Palming</div>
+            <div><strong>Status:</strong> Student</div>
+            <div><strong>Program:</strong> Computer Info Security</div>
+            <div><strong>Campus:</strong> Harrisburg</div>
+            <div><strong>Issued:</strong> 05/15/2025</div>
+        </div>
+        <div class="expiration">Valid through: 08/31/2025</div>
+        <div class="barcode">*H01971821*</div>
+    </div>
+</body>
+</html>
